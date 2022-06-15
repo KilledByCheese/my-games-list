@@ -108,11 +108,7 @@ export default function Menu() {
       link: "/",
       icon: <HomeIcon />,
     },
-    {
-      display: "Buttons",
-      link: "buttonShowCase",
-      icon: <GamepadIcon />,
-    },
+    //TODO add new Links here
   ];
 
   return (
@@ -163,7 +159,7 @@ export default function Menu() {
         <DrawerHeader />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="buttonShowCase" element={<ButtonShowcase />} />
+          {/* TODO Add new Routes here*/}
         </Routes>
       </Box>
     </Box>
