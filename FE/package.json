@@ -28,7 +28,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
     "pretty": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src"
   },
@@ -59,15 +58,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-sonarjs": "^0.13.0",
-    "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
     "prettier": "2.7.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  },  
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   }
